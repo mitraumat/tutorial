@@ -7,7 +7,6 @@ import (
 )
 
 func Database() *gorm.DB {
-//	DBMS := "sqlserver://sa:p@$$w0rd@localhost:1433?database=GolangLearn"
     DBMS := "app:mitraumat@tcp(127.0.0.1:3306)/golanglearn?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(DBMS), &gorm.Config{})
 
